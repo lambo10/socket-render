@@ -11,8 +11,8 @@ var io = require('socket.io')(http, {
     serveClient: true,
     cors: { origin: '*' }
 });
-
-http.listen(3000, function() { console.log('listening on *:3000'); });
+const port = process.env.PORT || 3000;
+http.listen(port, function() { console.log('listening on *:3000'); });
 
 var serverID = 'undefined';
 io.on('connection', function(socket) {
