@@ -9,7 +9,11 @@ var io = require('socket.io')(http, {
     allowEIO3: true,
     allowEIO4: true,
     serveClient: true,
-    cors: { origin: '*' }
+    cors: {
+        origin: '*',
+        methods: ["GET", "POST"],
+        credentials: true
+    }
 });
 const port = process.env.PORT || 3000;
 http.listen(port, function() { console.log('listening on *:' + port); });
