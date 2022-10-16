@@ -1,6 +1,6 @@
 module.exports = {
     apps: [{
-        name: "blockchainOperations",
+        name: "socket-render",
         script: "./app.js",
         instances: "max",
         env: {

@@ -1,5 +1,5 @@
 {
-    "name": "instance-api",
+    "name": "socket-render",
     "version": "1.0.0",
     "description": "",
     "main": "app.js",
@@ -9,14 +9,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/lambo10/instance-api.git"
+        "url": "git+https://github.com/lambo10/socket-render.git"
     },
     "author": "Lambert Nnadi",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/lambo10/instance-api/issues"
+        "url": "https://github.com/lambo10/socket-render/issues"
     },
-    "homepage": "https://github.com/lambo10/instance-api#readme",
+    "homepage": "https://github.com/lambo10/socket-render#readme",
     "dependencies": {
         "express": "^4.18.2",
         "pm2": "^5.2.2",
