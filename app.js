@@ -12,7 +12,7 @@ var io = require('socket.io')(http, {
     cors: { origin: '*' }
 });
 const port = process.env.PORT || 3000;
-http.listen(port, function() { console.log('listening on *:3000'); });
+http.listen(port, function() { console.log('listening on *:' + port); });
 
 var serverID = 'undefined';
 io.on('connection', function(socket) {
