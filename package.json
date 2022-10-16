@@ -2,7 +2,7 @@
     "name": "instance-api",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "app.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "pm2-runtime start ecosystem.config.js --env production"
@@ -19,6 +19,7 @@
     "homepage": "https://github.com/lambo10/instance-api#readme",
     "dependencies": {
         "express": "^4.18.2",
+        "pm2": "^5.2.2",
         "socket.io": "^4.5.2"
     }
 }
