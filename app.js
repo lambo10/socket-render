@@ -9,14 +9,10 @@ var io = require('socket.io')(http, {
     allowEIO3: true,
     allowEIO4: true,
     serveClient: true,
-    cors: {
-        origin: '*',
-        methods: ["GET", "POST"],
-        credentials: true
-    }
+    cors: { origin: '*' }
 });
-const port = process.env.PORT || 3000;
-http.listen(port, function() { console.log('listening on *:' + port); });
+
+http.listen(3000, function() { console.log('listening on *:3000'); });
 
 var serverID = 'undefined';
 io.on('connection', function(socket) {
